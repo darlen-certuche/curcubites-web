@@ -122,7 +122,8 @@ def _logo_svg(size: int) -> str:
     u = size
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"'
-        f' width="{size}" height="{size}" aria-label="Logo Curcubites" role="img">'
+        f' width="{size}" height="{size}" aria-label="Logo Curcubites" role="img"'
+        f' class="notranslate" translate="no">'
         f'<defs>'
         f'<linearGradient id="lgg{u}" x1="0%" y1="0%" x2="100%" y2="100%">'
         f'<stop offset="0%" stop-color="#F5C042"/>'
@@ -145,7 +146,7 @@ def _logo_svg(size: int) -> str:
         f'<text x="150" y="168"'
         f' font-family="Georgia,serif"'
         f' font-size="44" font-weight="700" font-style="italic"'
-        f' fill="#F5A01A" text-anchor="middle">Curcubites</text>'
+        f' fill="#F5A01A" text-anchor="middle" class="notranslate" translate="no">Curcubites</text>'
         f'<path d="M78 194 C108 182,132 190,150 187 C170 184,196 176,224 183"'
         f' stroke="url(#lgw1{u})" stroke-width="5" fill="none"'
         f' stroke-linecap="round"/>'
@@ -815,10 +816,10 @@ def render_nav(cart_count: int = 0) -> None:
     st.markdown(
         f"""
         <nav class="topbar">
-          <div class="brand-lockup">
+          <div class="brand-lockup notranslate" translate="no">
             <span class="brand-logo">{_logo_svg(44)}</span>
             <div>
-              <div class="brand-name">Curcubites</div>
+              <div class="brand-name notranslate" translate="no">Curcubites</div>
               <div class="brand-sub">Chips de plátano horneadas</div>
             </div>
           </div>
@@ -830,14 +831,14 @@ def render_nav(cart_count: int = 0) -> None:
             <a href="#productos" class="nav-cta">Pedir</a>
           </div>
         </nav>
-        <aside class="social-rail" aria-label="Redes sociales y blog">
+        <aside class="social-rail notranslate" translate="no" aria-label="Redes sociales y blog">
           <a href="https://www.instagram.com/curcubites_snack/" target="_blank" rel="noopener"
-             title="Instagram" aria-label="Instagram de Curcubites">IG</a>
+             title="Instagram" aria-label="Instagram de Curcubites" class="notranslate" translate="no">IG</a>
           <a href="https://www.tiktok.com/search?q=curcubites_snack" target="_blank" rel="noopener"
-             title="TikTok" aria-label="TikTok de Curcubites">TK</a>
-          <a href="#blog" title="Blog" aria-label="Blog Curcubites">BL</a>
+             title="TikTok" aria-label="TikTok de Curcubites" class="notranslate" translate="no">TK</a>
+          <a href="#blog" title="Blog" aria-label="Blog Curcubites" class="notranslate" translate="no">BL</a>
           <a href="https://wa.me/573008901210?text=Hola%2C+quiero+pedir+Curcubites" target="_blank" rel="noopener"
-             title="WhatsApp" aria-label="Contactar por WhatsApp">WA</a>
+             title="WhatsApp" aria-label="Contactar por WhatsApp" class="notranslate" translate="no">WA</a>
         </aside>
         <div class="cart-rail" aria-label="Carrito de compras">
           <a href="#carrito"
@@ -865,10 +866,10 @@ def render_hero() -> None:
         f"""
         <section id="inicio" class="hero">
           <div class="hero-copy">
-            <div class="hero-brand-intro">
+            <div class="hero-brand-intro notranslate" translate="no">
               {_logo_svg(56)}
               <div>
-                <div class="hero-brand-name-text">Curcubites</div>
+                <div class="hero-brand-name-text notranslate" translate="no">Curcubites</div>
                 <div class="hero-brand-sub-text">Chips de plátano · Colombia</div>
               </div>
             </div>
